@@ -1,16 +1,17 @@
+# Running Tests
 
-# Java Project README
-
-This README file provides instructions on how to compile and run the Java source code in this project.
+This project uses Maven to manage dependencies and run tests. To execute the test cases, follow these instructions:
 
 ## Prerequisites
 
-Before you begin, ensure you have the following installed:
+* **Java Development Kit (JDK):** Make sure you have a compatible JDK installed on your system.
+* **Maven:** Ensure Maven is installed and configured correctly. You can download it from [the official Apache Maven website](https://maven.apache.org/download.cgi).
 
-* **Java Development Kit (JDK):** Version [Insert required JDK version here] or higher. You can download it from [Oracle's website](https://www.oracle.com/java/technologies/javase-downloads.html) or use a package manager like SDKMAN! or Homebrew.
-* **Java IDE (Optional):** An IDE like Eclipse, IntelliJ IDEA, or NetBeans can make development easier, but it's not strictly required.
+## Running Tests
 
-## Compiling the Code
+1. **Open a terminal or command prompt:** Navigate to the root directory of the project where the `pom.xml` file is located.
 
-1. **Open a terminal or command prompt:** Navigate to the root directory of the project where the source code files are located.
+2. **Execute the test cases:** Use the following command to run the tests:
 
+   ```bash
+   mvn test -Dtest=TestRunner
